@@ -62,4 +62,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="moduleconfig-content">
+		<div>{$form}</div>
+	</div>
 </div>

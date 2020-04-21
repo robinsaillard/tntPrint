@@ -92,7 +92,12 @@ class TntPrint extends Module
             $this->postProcess();
         }
 
-        $this->context->smarty->assign('module_dir', $this->_path);
+        $this->context->smarty->assign(array(
+            'module_dir' => $this->_path,
+            'form' => $this->renderForm()
+
+        ));
+
 
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/admin/configure.tpl');
 
